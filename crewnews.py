@@ -25,8 +25,8 @@ news_collector = Agent(
 # Task for fetching news
 fetch_news_task = Task(
     description=(
-        "Scrape the latest technology articles related to the chosen topic from various sources. "
-        "Summarize key points and prepare data for the next processing stage."
+        "Search for the latest technology articles related to the chosen topic from the past 24 hours. "
+        "Ensure sources are credible and provide recent updates."
     ),
     expected_output='Raw data with news headline, date, source, article URL and summary ready for post-processing.',
     agent=news_collector
